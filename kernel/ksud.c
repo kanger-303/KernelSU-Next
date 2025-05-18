@@ -76,7 +76,7 @@ u32 ksu_devpts_sid;
 bool ksu_is_compat __read_mostly = false;
 #endif
 
-void on_post_fs_data(void)
+void ksu_on_post_fs_data(void)
 {
 	static bool done = false;
 	if (done) {
